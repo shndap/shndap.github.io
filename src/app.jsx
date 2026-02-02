@@ -183,7 +183,7 @@ const App = () => {
               <div className="absolute -inset-2 bg-gradient-to-tr from-blue-600 to-teal-500 rounded-full blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
               <div className={`relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 ${darkMode ? 'border-slate-800 bg-slate-900' : 'border-white bg-white shadow-xl'}`}>
                 <img 
-                  src="https://api.dicebear.com/7.x/avataaars/svg?seed=Sahand" 
+                  src="/me.png" 
                   alt="Sahand Akramipour"
                   className="w-full h-full object-cover"
                 />
