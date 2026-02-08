@@ -41,7 +41,7 @@ const App = () => {
     primaryEmail: "sahandap@gmail.com",
     institutionalEmail: "sahand.akramipour11@sharif.edu",
     github: "https://github.com/shndap",
-    linkedin: "https://linkedin.com/in/sahandap",
+    linkedin: "https://linkedin.com/in/shndap",
     about: "I'm a senior at Sharif University of Technology, deeply curious about how we can make machines understand the world more like we do. Currently, I spend most of my time exploring Deep Learning, specifically looking into Time-Series analysis and LLMs. Beyond the technical side, I'm really interested in the 'human' part of AI—how it can help us interpret expression, music, and art. I enjoy building things that bridge complex math with real-world human experiences.",
     passions: [
       { name: "LLMs & Reasoning", icon: <Brain size={18} />, color: "text-purple-500" },
