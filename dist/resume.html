@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sahand Akramipour - Resume</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #090b12;
+        --panel: #111827;
+        --panel-2: #1a2338;
+        --text: #f2ecd8;
+        --soft: #c8c0a5;
+        --muted: #8fa6ad;
+        --accent: #f6b753;
+        --accent-2: #65c4d1;
+        --border: #2a3550;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Inter, Segoe UI, Helvetica Neue, sans-serif;
+        background:
+          radial-gradient(circle at top, rgba(101, 196, 209, 0.16), transparent 34%),
+          radial-gradient(circle at bottom right, rgba(246, 183, 83, 0.14), transparent 26%),
+          linear-gradient(180deg, #070912 0%, #111827 100%);
+        color: var(--text);
+        padding: 32px;
+      }
+      .sheet {
+        max-width: 980px;
+        margin: 0 auto;
+        border: 2px solid var(--border);
+        background: linear-gradient(180deg, rgba(26, 35, 56, 0.97), rgba(17, 24, 39, 0.99));
+        box-shadow: 0 8px 0 rgba(0, 0, 0, 0.35);
+        padding: 32px;
+      }
+      .top {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+      }
+      .avatar {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        border: 2px solid var(--border);
+        background: var(--bg);
+      }
+      h1, h2, h3, p { margin: 0; }
+      h1 {
+        font-size: 30px;
+        letter-spacing: 0.04em;
+      }
+      .title {
+        margin-top: 8px;
+        color: var(--accent-2);
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 18px;
+      }
+      .card {
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.03);
+        padding: 18px;
+      }
+      .section-title {
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 800;
+        margin-bottom: 12px;
+      }
+      .muted { color: var(--muted); }
+      .soft { color: var(--soft); }
+      .pill {
+        display: inline-block;
+        padding: 6px 10px;
+        border: 1px solid var(--border);
+        margin: 0 8px 8px 0;
+        font-size: 12px;
+      }
+      .bar {
+        height: 10px;
+        border: 1px solid var(--border);
+        background: var(--bg);
+        margin-top: 8px;
+      }
+      .fill {
+        height: 100%;
+        background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      }
+      .stack { display: grid; gap: 12px; }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+      }
+      .mono {
+        color: var(--accent);
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+      @media (max-width: 720px) {
+        body { padding: 16px; }
+        .sheet { padding: 20px; }
+        .top { flex-direction: column; align-items: flex-start; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sheet">
+      <div class="top">
+        <img class="avatar" src="/me.png" alt="Sahand Akramipour" />
+        <div>
+          <h1>Sahand Akramipour</h1>
+          <div class="title">Machine Learning Engineer · Computer Engineering Student</div>
+          <p class="soft" style="margin-top: 12px; max-width: 64ch; line-height: 1.7;">
+            Senior at Sharif University of Technology focused on deep learning, time-series analysis, computer vision, and large language models.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <section class="card" style="grid-column: span 12;">
+          <div class="section-title">Profile</div>
+          <p class="soft" style="line-height: 1.75;">
+            I build machine learning systems with a focus on high-quality engineering, readable interfaces, and research that can survive production constraints. I care about making technical work understandable to both engineers and non-technical collaborators.
+          </p>
+        </section>
+
+        <section class="card" style="grid-column: span 12;">
+          <div class="section-title">Skills</div>
+          <div class="stack">
+            <div>
+              <div class="row"><span>AI / ML</span><span class="muted">90%</span></div>
+              <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+            </div>
+            <div>
+              <div class="row"><span>Python / PyTorch</span><span class="muted">92%</span></div>
+              <div class="bar"><div class="fill" style="width: 92%;"></div></div>
+            </div>
+            <div>
+              <div class="row"><span>Computer Vision</span><span class="muted">84%</span></div>
+              <div class="bar"><div class="fill" style="width: 84%;"></div></div>
+            </div>
+            <div>
+              <div class="row"><span>Research</span><span class="muted">88%</span></div>
+              <div class="bar"><div class="fill" style="width: 88%;"></div></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" style="grid-column: span 12;">
+          <div class="section-title">Experience</div>
+          <div class="stack">
+            <div>
+              <div class="mono">Aug 2024 - Present</div>
+              <h3 style="margin-top: 8px;">Machine Learning Engineer · Roshan</h3>
+              <p class="soft" style="margin-top: 8px; line-height: 1.7;">Building PyTorch-based models for high-dimensional time-series forecasting and sequential data.</p>
+            </div>
+            <div>
+              <div class="mono">2024 - Present</div>
+              <h3 style="margin-top: 8px;">Teaching Assistant · Sharif University of Technology</h3>
+              <p class="soft" style="margin-top: 8px; line-height: 1.7;">Helping younger students navigate Bioinformatics, Numerical Computations, and Programming.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" style="grid-column: span 12;">
+          <div class="section-title">Projects</div>
+          <div class="stack">
+            <div>
+              <h3>Stochastic Conv Nets</h3>
+              <p class="soft" style="margin-top: 8px; line-height: 1.7;">Implemented custom stochastic layers to model uncertainty in perception.</p>
+            </div>
+            <div>
+              <h3>Fashion MNIST Classification</h3>
+              <p class="soft" style="margin-top: 8px; line-height: 1.7;">High-performance classification pipeline for computer vision benchmarks.</p>
+            </div>
+            <div>
+              <h3>Vision U-Net Segmentation</h3>
+              <p class="soft" style="margin-top: 8px; line-height: 1.7;">Advanced image segmentation project utilizing U-Net architecture.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" style="grid-column: span 12;">
+          <div class="section-title">Contact</div>
+          <div class="stack">
+            <div><span class="muted">Email:</span> sahandap@gmail.com</div>
+            <div><span class="muted">LinkedIn:</span> linkedin.com/in/shndap</div>
+            <div><span class="muted">GitHub:</span> github.com/shndap</div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
