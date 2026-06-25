@@ -27,7 +27,8 @@ import {
   Copy,
   Check,
   Send,
-  Server
+  Server,
+  Map
 } from 'lucide-react';
 
 const App = () => {
@@ -133,6 +134,15 @@ const App = () => {
         icon: <Database size={20} />,
         highlight: false,
         link: "https://github.com/shndap/stream2pg"
+      },
+      {
+        title: "Urban Mobility Intelligence System",
+        type: "Big Data Project",
+        tech: "Spark Streaming, Kafka, ML",
+        desc: "Real-time urban mobility platform with adaptive city zoning that dynamically splits and merges regions based on traffic demand, alongside streaming analytics, anomaly detection, and congestion prediction.",
+        icon: <Map size={20} />,
+        highlight: true,
+        link: "https://github.com/shndap/Urban-Mobility-Intelligence-System"
       },
     ],
     honors: [
