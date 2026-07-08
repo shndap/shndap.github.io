@@ -144,6 +144,15 @@ const App = () => {
         highlight: true,
         link: "https://github.com/shndap/Urban-Mobility-Intelligence-System"
       },
+      {
+        title: "Brain Activity Predictor",
+        type: "Neuroscience Project",
+        tech: "NiLearn, DataLad, Optuna, Pytorch",
+        desc: "Narrative-to-fMRI encoding pipeline with transcript embeddings, Schaefer parcels, HRF alignment, ridge baselines, and streaming neural predictors.",
+        icon: <Brain size={20} />,
+        highlight: true,
+        link: "https://github.com/shndap/BrainActivityPredictor"
+      },
     ],
     honors: [
       { title: "Academic Excellence", event: "Computer Engineering @ Sharif University of Technology", year: "2022 - Present" },
