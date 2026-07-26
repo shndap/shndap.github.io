@@ -28,7 +28,8 @@ import {
   Check,
   Send,
   Server,
-  Map
+  Map,
+  Wrench
 } from 'lucide-react';
 
 const App = () => {
@@ -104,6 +105,7 @@ const App = () => {
         type: "Project",
         tech: "Deep Learning, PyTorch",
         desc: "High-performance classification pipeline exploring various neural architectures for computer vision benchmarks.",
+        topBadge: "+13K views on Kaggle",
         icon: <Palette size={20} />,
         highlight: false,
         link: "https://github.com/shndap/fashion-mnist-classification"
@@ -116,6 +118,15 @@ const App = () => {
         icon: <Eye size={20} />,
         highlight: false,
         link: "https://github.com/shndap/vision-unet-segmentation"
+      },
+      {
+        title: "LLM Finetuning (GRPO)",
+        type: "Project",
+        tech: "LLM, GRPO, RL, Reasoning",
+        desc: "Notebook on fine-tuning LLMs using Generalized Reward Policy Optimization (GRPO) for enhanced reasoning capabilities.",
+        icon: <Wrench size={20} />,
+        highlight: false,
+        link: "https://github.com/shndap/llm-finetuning-grpo"
       },
       {
         title: "Smart Grid Energy Simulation",
@@ -287,8 +298,15 @@ const App = () => {
                 className="group p-8 border transition-all block bg-section border-section hover-border-section-hover"
               >
                 <div className="flex justify-between items-start mb-6">
-                  <div className="p-3 bg-icon-surface text-icon">
-                    {item.icon}
+                  <div className="flex flex-col items-start gap-2">
+                    <div className="p-3 bg-icon-surface text-icon">
+                      {item.icon}
+                    </div>
+                    {item.topBadge && (
+                      <span className="text-[10px] font-black uppercase tracking-widest text-fuchsia-500">
+                        {item.topBadge}
+                      </span>
+                    )}
                   </div>
                   <div className="flex flex-col items-end gap-2">
                     <span className={`px-3 py-1 text-[10px] font-black uppercase tracking-widest border ${item.type === 'Research' ? 'badge-purple' : 'badge-blue'}`}>
